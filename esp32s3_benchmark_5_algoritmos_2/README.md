@@ -615,5 +615,6 @@ resultados reais devem ser obtidos na placa.
 
 ## Continuação
 
-Os itens 11 a 16 do documento (LMS, SVM, Random Forest, k-NN, DWT, DTW) ainda
-não foram implementados.
+Os itens 11 a 16 do documento (LMS, SVM, Random Forest, k-NN, DWT, DTW) estão
+implementados em `esp32s3_benchmark_6_algoritmos_3`, que fecha a série dos 16
+itens.

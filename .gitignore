@@ -24,12 +24,19 @@ sdkconfig.*.old
 sdkconfig.defaults.old
 
 # ---- Ferramentas / IDE ----
-.vscode/
-!.vscode/settings.json
+# "**/" e obrigatorio: um padrao com "/" no meio (como ".vscode/*") e ancorado
+# na raiz do repositorio e so valeria para o .vscode do nivel raiz. E nao pode
+# ser ".vscode/", porque excluir o diretorio impede o git de descer nele e a
+# negacao da linha seguinte nunca tem efeito.
+**/.vscode/*
+!**/.vscode/settings.json
+# O da raiz aponta cmake.sourceDirectory para o projeto 1, o que faz o VS Code
+# tratar aquele projeto como o do repositorio inteiro. Fica local, sem track.
+/.vscode/settings.json
 .idea/
-.vscode/c_cpp_properties.json
-.vscode/launch.json
-.vscode/tasks.json
+**/.vscode/c_cpp_properties.json
+**/.vscode/launch.json
+**/.vscode/tasks.json
 
 # ---- Sistema operacional ----
 .DS_Store
