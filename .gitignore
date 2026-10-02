@@ -1,0 +1,42 @@
+# ---- Build ESP-IDF ----
+build/
+cmake-build-*/
+sdkconfig.old
+dependencies.lock
+managed_components/
+*.elf
+*.bin
+*.map
+*.out
+*.part
+*.uf2
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# ---- Ambiente / configs geradas ----
+config.env
+project_description.json
+sdkconfig.*.old
+sdkconfig.defaults.old
+
+# ---- Ferramentas / IDE ----
+.vscode/
+!.vscode/settings.json
+.idea/
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# ---- Sistema operacional ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Temporários / logs ----
+*.log
+*.tmp
+*~
